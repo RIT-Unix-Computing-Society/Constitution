@@ -1,0 +1,187 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+\titleformat{\section}{\Large\scshape}{\thesection}{0em}{}
+\titleformat{\subsection}{\large\scshape}{\thesubsection}{0em}{}
+\renewcommand*\thesection{Section \Roman{section}: }
+\renewcommand*\thesubsection{\Roman{subsection}: }
+
+\newcommand{\pagetitle}[2]{
+	\begin{titlepage}
+	\vspace*{\fill}
+		\begin{center}
+			\Huge {#1} \\[0.0625in]
+			\LARGE {#2}
+		\end{center}
+	\vspace*{\fill}
+	\end{titlepage}
+}
+
+\newlist{subroutines}{enumerate}{1}
+\setlist[subroutines]{label = \roman*., leftmargin = 2.5em, labelsep = 0.5em, labelwidth = 2em, align = left}
+
+\begin{document}
+
+\pagetitle{Unix Computing Society at RIT}{Effective 2025-05-01}
+
+\section{Name}
+The name of this organization shall be the Unix Computing Society at RIT (RUCS).
+
+\section{Purpose}
+The purpose of the organization is to foster a collaborative environment for the RIT community to enrich their understanding of Unix and its place in the software world. 
+
+\section{Membership}
+\begin{subroutines}
+\item Membership is open to regularly enrolled undergraduates, post graduates, faculty, staff, and night students.
+\item Active members shall be defined as those in good standing who have met the qualifications set forth in the Club and Organization Recognition Guidelines. Only active members are eligible to vote in elections.
+\item A member shall be declared inactive if he/she attends fewer than forty percent of the official club activities within a given academic term. Exception is made for members on co-op, the summer term, and intersession.
+\end{subroutines}
+
+\section{Meetings}
+\begin{subroutines}
+    \item At a minimum, one meeting shall be held per week when classes are in session.
+    \item Meetings will generally be structured as a presentation, with a member of the club presenting a subject of their choice.
+\end{subroutines}
+
+\section{Officers}
+\begin{subroutines}
+\item The duties of the officers in this organization shall be in order of rank: President, Vice-President, Secretary, Treasurer, and Executive Board Member(s). RUCS (and Executive Board) may choose to rename these positions.
+\item Qualifications for office shall be to maintain good academic standing as defined by RIT (not on academic probation). In order to be nominated for office, member must have been active in the club during the previous academic term (not including the summer term and intersession), as defined in Membership.
+\item Officers shall be elected in the manner provided in the constitution and shall serve one calendar year beginning after elections. Officers are eligible for re-election.
+\item No officer may hold more than one office simultaneously, although they may take on the responsibilities of another office if the need is present either during the year or at election time.
+\item An officer may resign from office by submitting the intention in writing to the Executive Board. The resignation becomes effective upon submission to the Executive Board. Upon resignation, the University must be informed.
+\item The Executive Board may appoint new officers and create new positions as they see fit, by unanimous vote.
+\end{subroutines}
+
+\section{Advisors}
+\begin{subroutines}
+\item There shall be at least one club advisor.
+\item Only RIT staff and faculty are qualified to become an advisor, unless with permission of the Associate Director of Student Clubs and Organizations and or the Club Review Board.
+\item If the club advisor resigns, the university must be informed.
+\item The duty of the advisor shall be to ensure that the club follows Institute rules and regulations, assist and advise the Executive Board on decisions, and nurture the club's development.
+\end{subroutines}
+
+\section{Duties of Officers}
+\subsection{President}
+\begin{subroutines}
+	\item Preside over all meetings and activities of the organization, and the Executive Board.
+	\item Attend all general club meetings, designating an alternative member to attend meetings in the President's absence.
+\end{subroutines}
+\subsection{Vice President}
+\begin{subroutines}
+	\item Take over the duties of the President when needed or in the temporary absence of the President.
+	\item Supervise all financial transactions of the organization and keep all financial records.
+	\item Maintain regular contact with the Secretary of Finance of Student Government if needed.
+\end{subroutines}
+\subsection{Secretary}
+\begin{subroutines}
+	\item Take over the duties of the Vice President in the temporary absence of the Vice President.
+	\item Keep an accurate roll of members and keep the minutes of all meetings.
+	\item Be responsible for maintaining and updating all paperwork.
+	\item Maintain all internal club policies and documentation.
+\end{subroutines}
+\subsection{Treasurer}
+\begin{subroutines}
+        \item Handle incoming donations of any form to the club.
+        \item Manage the club budget, including budget requests and club payments.
+        \item Be responsible for the financial upkeep of club property (such as recurring payments on services).
+        \item Advise the RUCS Executive Board on financial matters, proactively where appropriate and on request of Executive Board officers.
+\end{subroutines}
+
+\section{Executive Board}
+\begin{subroutines}
+\item The management of this organization shall be vested in the Executive Board.
+\item The Executive Board shall be composed of the President, Vice-President, Secretary, Advisor(s), Treasurer, and Executive Board members, or equivalent titles if appropriate.
+\item The Executive Board shall meet and report information to members as needed.
+\item The Executive Board shall hold a special election to fill a sudden vacancy of any office.
+\end{subroutines}
+
+\section{Record Keeping}
+\begin{subroutines}
+\item The Executive Board shall maintain and keep updated a record of club history, including Executive Board members and notable club happenings.
+\item The Executive Board shall maintain meeting notes on Executive Board proceedings.
+\item The Executive Board shall make available on request club history and past records, excluding information deemed confidential, to RIT and active club members.
+\item The Executive Board shall maintain and keep updated records on how the club operates and how to manage club property and proceedings.
+\end{subroutines}
+
+\section{Elections}
+\begin{subroutines}
+\item Nominations for office shall be made from the floor at the meeting prior to the election meeting by any member in good standing. A person may be nominated for more than one office.
+\item The order of election shall be President, Vice-President, Secretary, Treasurer, and Executive Board Members.
+\item Votes shall be cast by secret ballot, with an exception made for write-ins.
+\item Elections shall be scheduled no less than one week in advance, during a regularly scheduled club meeting.
+\item Elections shall take place no less than three weeks prior to the end of the semester to allow for a transitional period.
+\item Induction of new officers shall take place at the meeting after elections.
+\end{subroutines}
+
+\section{Transfer of Accounts}
+\begin{subroutines}
+\item The term "Superuser" shall refer to an account with the highest possible level of permissions. In the case of a Unix-based or Unix-like operating system, this refers specfically to the user account with ID 1.
+\item Superuser passwords for all RUCS-owned devices (e.g. servers) must be given to the new President before the meeting subsequent to the election meeting.
+\item Any online account which is created for the sole purpose of serving RUCS, not including accounts on the behalf of any one member of RUCS, must be recoverable with the services that are provided by RUCS's status as a club (e.g. \texttt{RUCS@rit.edu}).
+\item Any online organization (e.g. GitHub organization, subreddit, IRC) which is created to represent RUCS must contain one of the above accounts with superuser privileges.
+\end{subroutines}
+
+\section{Impeachment}
+\begin{subroutines}
+\item Any officer of this organization can be impeached.
+\item Impeachment may be initiated by petition, in writing, by 25\% or more of the active members, when presented to the members in a regular meeting.
+\item At the next meeting, the impeached officer shall present their defense to the members, then a secret ballot vote shall be taken.
+\item Conviction of impeachment shall require a 2/3 vote by the active members in good standing present.
+\item Conviction of impeachment shall cause removal from office and loss of all privileges thereof.
+\item The filling of an office vacated by impeachment shall be by a special election held in the manner of annual elections.
+\item The Executive Board reserves the right to remove an officer by unanimous vote, excluding the offending officer, with the consent of the Advisor.
+\end{subroutines}
+
+\section{Amendments}
+\begin{subroutines}
+\item An amendment to this constitution may be proposed by any member in good standing, in writing, at any meeting. A copy of the amendment must be made easily accessible by club members for at least two weeks before a vote takes place. 
+\item The proposed amendment shall require a 2/3 affirmative vote by a voting quorum made up of active members.
+\item Before the proposed amendment shall become operational it must be approved by the Associate Director of Student Clubs and Organizations.
+\end{subroutines}
+
+\section{Adherence to University Policies}
+\subsection{Anti-Hazing}
+\begin{subroutines}
+    \item Per the RIT Hazing Policy (RIT Student Conduct Process; IV. RIT Code of Conduct; 14. Hazing/Failure to Report
+Hazing)
+Hazing/Failure to Report Hazing. Behavior, regardless of intent, which endangers the emotional, or physical
+health and safety of a Student for the purpose of membership, affiliation with, or maintaining membership in,
+a group or Student Organization. Hazing includes any level of participation, such as being in the presence,
+having awareness of hazing, or failing to report hazing. Examples of hazing include, but are not limited to,
+beating or branding, sleep deprivation or causing excessive fatigue, threats of harm, forcing or coercing
+consumption of food, water, alcohol or other drugs, or other substances, verbal abuse, embarrassing,
+humiliating, or degrading acts, or activities that induce, cause or require the Student to perform a duty or task
+which is not consistent with fraternal law, ritual or policy or involves a violation of local, state or federal laws,
+or the RIT Code of Conduct.
+\end{subroutines}
+\subsection{NY State Hazing Law}
+\begin{subroutines}
+    \item § 120.16 Hazing in the first degree. A person is guilty of hazing in the first degree when, in the course of another person's initiation into or affiliation with any organization, he intentionally or recklessly engages in conduct which creates a substantial risk of physical injury to such other person or a third person and thereby causes such injury. Hazing in the first degree is a class A misdemeanor.
+    \item § 120.17 Hazing in the second degree. A person is guilty of hazing in the second degree when, in the course of another person's initiation or affiliation with any organization, he intentionally or recklessly engages in conduct which creates a substantial risk of physical injury to such other person or a third person. Hazing in the second degree is a violation.
+\end{subroutines}
+\subsection{Anti-Discrimination Clause}
+\begin{subroutines}
+    \item This organization shall not discriminate on the basis of sex, race, color, sexual orientation gender identity and gender expression, religion, age marital sate, national origin, disability or veteran status. This policy will include but is not limited to, recruiting, membership, organization activities or opportunities to hold or run for club office.
+\end{subroutines}
+\subsection{Statement of Compliance with University regulations}
+\begin{subroutines}
+    \item This organization shall comply with all university and Center for Campus Life policies and regulations, and local, state and federal laws.
+\end{subroutines}
+
+\section{Enabling clause}
+\begin{subroutines}
+    \item This constitution was voted on and put into effect on 2025-05-01.
+    \item This document has been signed by:
+    \begin{enumerate}
+        \item President: Christopher Fore
+        \item Treasurer: Nathan Strobl
+        \item Advisor: Vacant
+        \end{enumerate}
+\end{subroutines}
+\end{document}
